@@ -1,0 +1,17 @@
+[package]
+name = "taep_controller"
+version = "0.1.0"
+authors = ["Marcel Neuhausler"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+iron = "0.5.*"
+lazy_static = "0.2.8"
+rustc-serialize = "0.3"
+router = "0.5.1"
+yaml-rust = "0.3"
+hyper = "0.8.1"
+
+[build-dependencies]
+bindgen = "0.30.0"

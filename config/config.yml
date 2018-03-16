@@ -1,0 +1,40 @@
+bf-bin-path: /root/bf-sde/install
+bf-config-file: /root/taep-controller/p4/l2_switching.conf
+enable-labeling: true
+api-port: 8100
+ports:
+    - number: 0
+      speed: 40
+      autoneg-disabled: true
+      fec-disabled: true
+    - number: 4
+      speed: 40
+      autoneg-disabled: true
+      fec-disabled: true
+    - number: 8
+      speed: 40
+    - number: 12
+      speed: 40
+    - number: 16
+      speed: 40
+    - number: 20
+      speed: 40
+connections:
+    - from: 0
+      to: 4
+      type: bidirectional
+    - from: 12
+      to: 4
+      type: unidirectional
+    - from: 20
+      to: 4
+      type: unidirectional
+    - from: 8
+      to: 0
+      type: unidirectional
+    - from: 16
+      to: 0
+      type: unidirectional
+hhd:
+    analysis-window-in-seconds: 30
+    max-number-of-flows: 200

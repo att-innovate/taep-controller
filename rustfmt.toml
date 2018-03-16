@@ -1,0 +1,9 @@
+write_mode = "Overwrite"
+max_width = 140
+use_small_heuristics = false
+format_strings = false
+reorder_imports = true
+imports_layout = "Horizontal"
+reorder_imported_names = true
+indent_style = "block"
+error_on_line_overflow = false
